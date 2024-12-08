@@ -19,6 +19,7 @@ mongoose.connect(uri)
     res.send('Server is running!');
 }); */
 
+
 app.get("/", (req, res) => res.send("Express on Vercel"));
 
 // Mongoose schema

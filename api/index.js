@@ -1,4 +1,3 @@
-const app = require('../app'); // Adjust the path to your app.js file
-const serverless = require('serverless-http');
+import app from '../app';
 
-module.exports = serverless(app);
+export default app;

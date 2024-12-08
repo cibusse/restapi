@@ -2,15 +2,19 @@
   "name": "restapi",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ./node_modules/.bin/babel src --out-dir dist" 
+    "build": "babel api -d dist",
+    "vercel-build": "npm run build && cp -r public dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@babel/cli": "^7.26.4",
+    "dotenv": "^16.4.7",
     "mongodb": "^6.11.0",
     "mongoose": "^8.8.2"
   },
