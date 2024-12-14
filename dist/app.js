@@ -18,7 +18,7 @@ mongoose.connect(uri).then(() => console.log('MongoDB connected')).catch(err => 
     res.send('Server is running!');
 }); */
 
-app.get("/", (req, res) => res.send("Express on Vercel"));
+app.get("/api", (req, res) => res.send("Server is running!"));
 
 // Mongoose schema
 const musicSchema = new mongoose.Schema({
