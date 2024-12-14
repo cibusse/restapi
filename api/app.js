@@ -20,7 +20,7 @@ mongoose.connect(uri)
 }); */
 
 
-app.get("/", (req, res) => res.send("Express on Vercel"));
+app.get("/api", (req, res) => res.send("Server is running!"));
 
 // Mongoose schema
 const musicSchema = new mongoose.Schema({
