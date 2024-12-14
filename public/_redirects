@@ -1,1 +1,5 @@
-/api/*  https://restapi1.netlify.app/api/:splat  200
+/api/getall  https://restapi1.netlify.app/api/getall 
+/api/:code   https://restapi1.netlify.app/api/:code
+/api/add     https://restapi1.netlify.app/api/add
+/api/update/:code https://restapi1.netlify.app/api/update/:code
+/api/delete/:code  https://restapi1.netlify.app/api/delete/:code
